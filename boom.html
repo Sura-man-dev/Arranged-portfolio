@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Portfolio</title>
+    <head>
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-jQ8xv3iE+e5vQKZBv+bKPpOvB+xCr1G7+lX2iMIRH6tFSvCrFjv9zvF8q6gHpX4R1D8+gTFh4K0lNQxHH1R3CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+ 
+   <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
 
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#about" onclick="showSection('about')">About</a>
+            <a href="#services" onclick="showSection('skills')">Skill</a>
+            <a href="#skills" onclick="showSection('portfolio')">Portfolio</a>
+            <a href="#contact" onclick="showSection('Contact')">Contact</a>
         </nav>
+        
     </header>
     <section class="home">
         <div class="content-container">
@@ -32,10 +41,10 @@
                 
 
           <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>   
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"> <i class="fab fa-facebook"></i></a>   
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></i></a>
           </div>
           <a href="#" class="btn-box">More About</a>
                    
@@ -48,5 +57,226 @@
 
     <script src="script.js"></script>
     </section>
+     
+      <section class="about" id="about">
+        <!--div class="about-imag">
+            <img src="mister.jpg">
+        </div-->
+        <div class="about-text">
+            <div class="about-box">
+            <h2>About<span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>I am a third-year Computer Science student from Ethiopia with a strong passion for learning and innovation.
+My main areas of interest include Data Science, Web Development, and Java programming.
+I am committed to building my technical and analytical skills through academic projects and self-learning.
+I enjoy solving challenging problems and exploring new technologies that expand my knowledge.
+My goal is to gain practical experience and contribute to meaningful projects in the field of computing.</p>
+
+       <a href="#" class="btn-box">More About Me</a>
+
+        </div>
+        </div>
+      </section>
+
+     <section  class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My<span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                <i class="fas fa-database" style="color: aquamarine;"></i>
+                    <h2>Data Science</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nesciunt placeat debitis velit obcaecati praesentium sint porro, sequi facere temporibus delectus optio sit perspiciatis ullam, quidem dignissimos commodi pariatur. Facilis?</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                     <i class="fas fa-code" style="color: aquamarine;"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nesciunt placeat debitis velit obcaecati praesentium sint porro, sequi facere temporibus delectus optio sit perspiciatis ullam, quidem dignissimos commodi pariatur. Facilis?</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-phone" style="color: aquamarine;"></i>
+                    <h2>Android Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nesciunt placeat debitis velit obcaecati praesentium sint porro, sequi facere temporibus delectus optio sit perspiciatis ullam, quidem dignissimos commodi pariatur. Facilis?</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+               
+
+            </div>
+        </div>
+     </section> 
+     <h1 class="sub-title">My<span>Skill</span></h1>
+      
+     <section>
+    <div class="container1" id="Skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+            <div class="bar"><i class="fab fa-html5" style="color: #c95d2c;"></i>
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"> <i class="fab fa-css3-alt" style="color:#09bcbc;"></i>
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class="fab fa-js" style="color: yellow;"></i>
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="progress-line js">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class="fab fa-php" style="color:yellowgreen"></i>
+                <div class="info">
+                    <span>PHP</span>
+                </div>
+                <div class="progress-line php">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class="fab fa-react" style="color: #09bcbc;"></i>
+                <div class="info">
+                    <span>React</span>
+                </div>
+                <div class="progress-line react">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar"><i class="fab fa-python" style="color: aquamarine;"></i>
+                <div class="info">
+                    <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+            
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percetage">90%</div>
+                <div class="text">Creativity</div>
+            </div>
+
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percetage">65%</div>
+                <div class="text">Communication</div>
+            </div>
+
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percetage">75%</div>
+                <div class="text">Problem Solving</div>
+            </div>
+
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percetage">70%</div>
+                <div class="text">TeamWork</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+     <section>
+        <div id="portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2>Latest<spna>Project</spna></h2>
+
+                <div class="portfolio-content">
+                    <div class="row">
+                      <img src="data.png">
+                      <div class="layer">
+                        <h5>Data Science</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Sed facilis enim placeat corporis minima obcaecati sit illo quae pariatur possimus asperiores reprehenderit aspernatur cumque reiciendis doloremque, velit quasi voluptas laudantium.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt" style="color: #09bcbc;"></i></a>
+                      </div>  
+                    </div>
+                    <div class="row">
+                      <img src="shop.png">
+                      <div class="layer">
+                        <h5>Data Science</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis enim placeat corporis minima obcaecati sit illo quae pariatur possimus asperiores reprehenderit aspernatur cumque reiciendis doloremque, velit quasi voluptas laudantium.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt" style="color: #09bcbc;"></i></a>
+                      </div>  
+                    </div>
+                    <div class="row">
+                      <img src="port.png">
+                      <div class="layer">
+                        <h5>Data Science</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis enim placeat corporis minima obcaecati sit illo quae pariatur possimus asperiores reprehenderit aspernatur cumque reiciendis doloremque, velit quasi voluptas laudantium.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt" style="color: #09bcbc;"></i></a>
+                      </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact<span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure est, iusto expedita cumque illo qui harum quos!</p>
+            <div class="contact-list">
+                <li><i class="fas fa-envelope"></i>rohobotsolomon@gmail.com</li>
+                <li><i class="fas fa-phone"></i>0937770402</li>
+            </div>
+            <div class="contact-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>   
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"> <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="">
+            <input type=" " placeholder="Enter your Name" required>
+            <input type="email" placeholder="Enter your Email" required>
+
+            <input type=" " placeholder="Enter your Subject">
+            <textarea name=" " id=" " cols="40" rows="10" placeholder="Enter your Messsage" required></textarea>
+            <input type="submit" value="submit" class="send">
+
+          </form>  
+        </div>
+        </section>
+        <div class="last-text">
+            <p>Developed by Surafel @ 2025</p>
+        </div>
+        <a href="#" class="top"></a>
 </body>
 </html>
